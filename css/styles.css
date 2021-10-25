@@ -8,7 +8,7 @@
 
 /* Typography */
 html {
-  /* 10px */
+  /* 62.5% * 16px = 10px */
   font-size: 62.5%;
 }
 body {
@@ -49,6 +49,7 @@ p {
     font-size: 2.4rem;
   }
 }
+
 /* Links */
 a {
   text-decoration: none;
