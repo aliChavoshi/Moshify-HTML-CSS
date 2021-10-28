@@ -5,6 +5,8 @@
   --color-heading: #03045e;
   --color-body: #918ca4;
   --color-icon: #bde0fe;
+  --color-border: #ccc;
+  --border-radius: 3rem;
 }
 *,
 *::after,
@@ -157,7 +159,7 @@ a {
 
 /* buttons */
 .btn {
-  border-radius: 3rem;
+  border-radius: var(--border-radius);
   color: var(--color-heading);
   font-size: 1.8rem;
   font-weight: 600;
@@ -209,15 +211,16 @@ a {
     font-size: 1.5rem;
   }
 }
+
 /* Inputs */
 .input {
-  border-radius: 3rem;
-  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
   box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.1);
-  font-size: 2rem;
-  padding: 1.5rem 3.5rem;
-  outline: none;
   color: var(--color-heading);
+  font-size: 2rem;
+  outline: none;
+  padding: 1.5rem 3.5rem;
   transition: border 0.6s;
 }
 .input:focus {
@@ -228,6 +231,21 @@ a {
   color: var(--color-body);
   font-size: 1.5rem;
 }
+.input-group {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  display: flex;
+}
+.input-group .input {
+  border: none;
+  box-shadow: none;
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+.input-group .btn {
+  margin: 4px;
+}
+
 @media screen and (min-width: 1024px) {
   .input {
     font-size: 1.5rem;
