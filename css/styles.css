@@ -251,3 +251,21 @@ a {
     font-size: 1.5rem;
   }
 }
+/* Cards */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 0 2rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+.card--primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+.card--secondary {
+  background-color: var(--color-secondary);
+  color: white;
+}
