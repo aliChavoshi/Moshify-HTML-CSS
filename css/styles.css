@@ -152,8 +152,8 @@ a {
 }
 /************************** Icons ******************************/
 .icon {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
 }
 .icon--primary {
   fill: var(--color-primary);
@@ -343,4 +343,17 @@ a {
   .plan__description {
     font-size: 1.7rem;
   }
+}
+/****************************** Media **********************************/
+.media__image {
+  margin-top: 1rem;
+}
+.media {
+  display: flex;
+}
+.media__title {
+  margin-top: 0;
+}
+.media__body {
+  margin: 0 2rem;
 }
