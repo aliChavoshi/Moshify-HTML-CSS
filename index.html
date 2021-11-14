@@ -34,7 +34,11 @@
           <p class="hero__tagline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facere!</p>
           <a href="#" class="btn btn--accent btn--stretched">GET STARTED</a>
         </header>
-        <img class="hero__image" src="./images/banner.png" alt="banner">
+        <picture>
+          <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x" />
+          <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x" />
+          <img class="hero__image" src="images/banner.png" alt="banner">
+        </picture>
       </div>
     </div>
   </section>
