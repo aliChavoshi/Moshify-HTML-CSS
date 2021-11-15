@@ -14,33 +14,27 @@
 </head>
 
 <body>
-  <nav class="nav collapsible">
-    <a href="#"><img src="./images/logo.svg" class="nav__logo" alt="logo"></a>
-    <svg class="icon icon--white nav__toggler">
-      <use xlink:href="images/sprite.svg#menu"></use>
-    </svg>
-    <ul class="list nav__list collapsible__content">
-      <li class="list__item"><a href="#">Hosting</a></li>
-      <li class="list__item"><a href="#">VPS</a></li>
-      <li class="list__item"><a href="#">Domains</a></li>
-      <li class="list__item"><a href="#">Pricing</a></li>
-    </ul>
-  </nav>
-  <section>
-    <div class="block block--dark clip-skewed-left hero">
-      <div class="container grid grid--1x2">
-        <header class="hero__content">
-          <h1 class="block__heading">Cloud Hosting for Pros</h1>
-          <p class="hero__tagline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facere!</p>
-          <a href="#" class="btn btn--accent btn--stretched">GET STARTED</a>
-        </header>
-        <picture>
-          <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x" />
-          <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x" />
-          <img class="hero__image" src="images/banner.png" alt="banner">
-        </picture>
-      </div>
+  <section class="block container block-domain">
+    <div class="block__header">
+      <h2>the best webhosting Starting at per month</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellendus at exercitationem in deleniti
+        libero magni necessitatibus omnis, dicta beatae?</p>
     </div>
+    <div class="input-group">
+      <button class="btn btn--accent">
+        <svg class="icon icon--white">
+          <use xlink:href="images/sprite.svg#search"></use>
+        </svg>Search</button>
+      <input type="text" class="input" placeholder="please enter your domain name" />
+    </div>
+    <ul class="list block-domain__price">
+      <li><span class="badge badge--primary badge--small">10% OFF</span></li>
+      <li>lorem</li>
+      <li>lorem</li>
+      <li>lorem</li>
+      <li>lorem</li>
+      <li>lorem</li>
+    </ul>
   </section>
   <script src="js/main.js"></script>
 </body>
