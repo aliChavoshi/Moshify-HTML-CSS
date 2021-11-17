@@ -279,6 +279,21 @@ a {
 }
 .input-group .btn {
   margin: 4px;
+  padding: 0 1rem;
+  font-size: 1.1rem;
+}
+.input-group .icon {
+  margin: 0 0.5rem;
+  padding: 2px;
+}
+@media screen and (min-width: 768px) {
+  .input-group .btn {
+    padding: 1.5rem;
+  }
+  .input-group .icon {
+    margin-right: 1rem;
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 1024px) {
