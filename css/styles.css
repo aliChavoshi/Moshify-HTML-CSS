@@ -14,6 +14,10 @@
 *::before {
   box-sizing: border-box;
 }
+::selection {
+  background-color: var(--color-primary);
+  color: white;
+}
 /*************************** Typography *********************************/
 html {
   /* 62.5% * 16px = 10px */
@@ -40,6 +44,7 @@ h2 {
 }
 h3 {
   font-size: 3rem;
+  font-weight: 500;
 }
 p {
   margin-top: 0;
@@ -130,7 +135,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  color: var(--color-heading);
 }
 /* modifier --> elements */
 .list--inline .list__item {
@@ -140,6 +144,7 @@ a {
 /* modifier */
 .list--tick {
   list-style-image: url(../images/icons/tick.svg);
+  color: var(--color-heading);
   padding-left: 3rem;
 }
 /* modifier --> elements */
@@ -398,11 +403,12 @@ a {
   }
 }
 /****************************** Media **********************************/
-.media__image {
-  margin-top: 1rem;
-}
 .media {
   display: flex;
+  margin-bottom: 4rem;
+}
+.media__image {
+  margin-top: 1rem;
 }
 .media__title {
   margin-top: 0;
@@ -559,15 +565,17 @@ a {
   background-color: #000;
   color: #7b858b;
 }
-.block--dark .block__heading {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
   color: white;
 }
 .clip-skewed-right {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 .clip-skewed-left {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 .block__header {
@@ -629,10 +637,6 @@ a {
   }
 }
 /***************************** Hero ******************************/
-.hero {
-  /* override skewed */
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
 .hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
@@ -696,12 +700,23 @@ a {
 .feature:first-of-type {
   margin-top: 6rem;
 }
-
 .feature__image {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
+  }
+}
+/* *****************************************showcase block***************************************** */
+.block-showcase__image > img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+  .block-showcase__image > img {
+    justify-self: end;
   }
 }
