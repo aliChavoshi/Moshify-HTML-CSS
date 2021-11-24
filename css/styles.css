@@ -191,7 +191,7 @@ a {
   color: var(--color-heading);
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   margin: 1rem 0;
   cursor: pointer;
   outline: 0;
@@ -279,7 +279,7 @@ a {
   border: none;
   box-shadow: none;
   flex-grow: 1;
-  width: 100%;
+  width: 0;
   padding: 1.5rem 1rem;
 }
 .input-group .btn {
@@ -667,8 +667,9 @@ a {
 }
 .block-domain__price {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  color: var(--color-heading);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 4rem);
   justify-items: center;
   font-size: 2rem;
   font-weight: bold;
