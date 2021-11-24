@@ -694,6 +694,21 @@ a {
 .plan {
   transition: transform 0.2s ease-out;
 }
+.plan .list__item {
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+.plan .btn {
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .plan .list__item {
+    font-size: inherit;
+  }
+  .plan .btn {
+    padding: inherit;
+  }
+}
 /* *****************************************ّFeature Block***************************************** */
 .feature {
   gap: 4rem;
